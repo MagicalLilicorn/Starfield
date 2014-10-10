@@ -11,7 +11,7 @@ void setup(){
 	poops[poops.length-1] = new OddballParticle();
 }
 void draw(){
-	fill(0,0,0,50);
+	fill(0,0,0,10);
 	rect(0,0,600,600);
 	for(int i = 0; i<poops.length; i++){
 		poops[i].move();
