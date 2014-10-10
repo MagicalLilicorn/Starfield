@@ -19,7 +19,7 @@ Particle[] poops;
 public void setup(){	
 	background(0);
 	size(600,600);
-	poops = new Particle[5000];
+	poops = new Particle[1000];
 	for(int i = 0; i<poops.length-1; i++){
 		poops[i] = new NormalParticle();
 	}
@@ -64,7 +64,7 @@ class JumboParticle extends NormalParticle {
 		myX = 300;
 		myY = 300;
 		mySpeed = Math.random()*10;
-    	myAngle = Math.random()*2*Math.PI;
+    	myAngle = Math.random()*Math.PI;
 		myColor = color(255);
 		mySize = 10;
 	}
